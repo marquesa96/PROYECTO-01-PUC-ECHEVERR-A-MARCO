@@ -10,11 +10,11 @@ lifestore_searches = [id_search, id product]
 
 best_sale = {} #Crea un diccionario 
 
-print ("El num de ventas x producto es:  ")
+print ("Producto con cantidad de veces que se ha vendido:  ")
 
 
 for sale in lifestore_sales:
-    value = sale[:][1] #Se define como una variable el la posición del dato que nos interesa
+    value = sale[:][1] #Se define como una variable la posición del dato que nos interesa
     if value in best_sale: #Si el ID del producto ya ha pasado por el diccionario sumale 1
         best_sale [value] += 1
     else:
@@ -32,5 +32,5 @@ for value in best_sale:
         high_frecuence = value
         best_sale_ID = best_sale [value]
 
-conteo = best_sale [int (high_frecuence)] + 5
+conteo = best_sale [int (high_frecuence)]
 print (f"El mas vendido es {high_frecuence}, encontrado {conteo} veces")

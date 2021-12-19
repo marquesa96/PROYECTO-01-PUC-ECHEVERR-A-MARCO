@@ -1,2 +1,3 @@
 # Emtech_1
-First project with Python 
+
+My First project with Python to learn data science (:
